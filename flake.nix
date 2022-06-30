@@ -218,6 +218,8 @@
                       groups = ["ops"];
                       runAs = "root";
                       commands = [
+                        (nopasswd "/run/current-system/sw/bin/systemctl reboot")
+
                         (nopasswd "/run/current-system/sw/bin/systemctl restart ${name}.service")
                         (nopasswd "/run/current-system/sw/bin/systemctl restart nginx.service")
 
