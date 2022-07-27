@@ -20,7 +20,7 @@
     "xhci_pci"
   ];
   boot.kernelModules = ["kvm-intel"];
-  boot.kernelPackages = pkgs.linuxPackages_enarx;
+  #boot.kernelPackages = pkgs.linuxPackages_enarx;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.enable = true;
 
