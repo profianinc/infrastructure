@@ -3,7 +3,9 @@
   lib,
   pkgs,
   ...
-}: {
+}: let
+  emails.ops = "roman@profian.com"; # TODO: How about ops@profian.com ?
+in {
   documentation.nixos.enable = false;
 
   environment.shells = [
@@ -54,6 +56,7 @@
   programs.zsh.interactiveShellInit = "source '${pkgs.grml-zsh-config}/etc/zsh/zshrc'";
 
   security.acme.acceptTerms = true;
+  security.acme.defaults.email = emails.ops;
 
   security.sudo.enable = true;
 
