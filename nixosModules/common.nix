@@ -23,6 +23,10 @@ with lib; {
   nix.requireSignedBinaryCaches = true;
   nix.settings.auto-optimise-store = true;
 
+  nixpkgs.overlays = [
+    self.overlays.nixpkgs
+  ];
+
   programs.neovim.defaultEditor = mkDefault true;
   programs.neovim.viAlias = mkDefault true;
   programs.neovim.vimAlias = mkDefault true;

@@ -28,8 +28,6 @@
     deploy-rs,
     flake-utils,
     nixpkgs,
-    nixpkgs-stable,
-    nixpkgs-unstable,
     ...
   }:
     {
@@ -42,25 +40,9 @@
     }
     // flake-utils.lib.eachDefaultSystem (
       system: let
-        pkgsStable = import nixpkgs-stable {
-          inherit system;
-        };
-
-        pkgsUnstable = import nixpkgs-unstable {
-          inherit system;
-        };
-
         pkgs = import nixpkgs {
           inherit system;
           overlays = [
-            (_: _: pkgsStable) # Overlay latest packages from "stable" upstream release channel
-            (_: _: {
-              # Overlay some latest packages from "unstable" upstream release channel
-              inherit
-                (pkgsUnstable)
-                linux-firmware
-                ;
-            })
             self.overlays.default
           ];
         };
