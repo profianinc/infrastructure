@@ -99,3 +99,33 @@ creation_rules:
       - *roman
     - pgp:
       - *roman
+
+  - path_regex: secrets/monitoring_api_token
+    key_groups:
+    - age:
+      # snp.equinix.try.enarx.dev
+      - age1xq3cf6l9l23jqu54s4xqjnex9g04tmuw89tfvk5vwl573njhlscszym3hk
+      # snp.aws.try.enarx.dev
+      - age1dfy5tv50luyvf62yqh63r69j6g2l30wqscndyyay02y4kp4glyts8as5hj
+      # sgx.equinix.try.enarx.dev
+      - age1ngtadawwwsemf0uveuzz3ypq0y7e5mqxfclk752tdwre98w4sckq8yxjj5
+      # benefice.testing.profian.com
+      - age15mq3msgr00046pd8wnjw7y3xww4p4c3u3vxjvud5gldrrzdsl3msz4rfr8
+      # attest.testing.profian.com
+      - age10p3jcp80q9cmzfqxl73cnjx2t24x93gvxg7jjzu9cz4yqgnfv9nqf7qxle
+      # attest.staging.profian.com
+      - age1mvfx8697gv2uxhk5kvsccmqpuy23pd0z5z2nmrtxrgmxxrg5dgjqkytcnv
+      # attest-prod1
+      - age1wj8drt0hstdfrsv9jgaywst36ls0xyaxa8t6y7cnw07u45kgka7sx2xzdj
+      # attest-prod2
+      - age1vxnheh6033t3x8x6cv3lv4gla2wkadmu7q92udr7j5r93cvz5ekssz5r70
+      # attest-prod3
+      - age185y8we8uvslax422v0cq80rrnmzf9htmwuuzj9l6wlm02a3qkppqkxk837
+      # attest-prod4
+      - age1jsv5zl0fkl85whnlup5rxncez48yxwpd5a5tagat2g4q5ehdecps9ktjpt
+      # store.testing.profian.com
+      - age12r67ult8s9pcrw0lehsfhsxdn77xj9pxh8ha7tkajtktz4knt5uszvz2df
+      # store.staging.profian.com
+      - age1cypsxexvv20ps6ysv6vau5ltzz7a3lyfqvxwesndnn7gmwpjvpxspfcjuv
+      # store.profian.com
+      - age1tl5j36jdl45mwnjffshdv2m6sqelyhga3utqg0e23d7uz8nd0fwqnyzg56
