@@ -9,6 +9,5 @@ inputs @ {...}: {
   sev = import ./sev.nix inputs;
   sgx = import ./sgx.nix inputs;
   shells = import ./shells.nix inputs;
-  steward = import ./steward.nix inputs;
   users = import ./users.nix inputs;
 }

@@ -28,8 +28,6 @@ jobs:
         chmod 400 ~/.ssh/id_ed25519
         ssh-agent -a $SSH_AUTH_SOCK
         ssh-add ~/.ssh/id_ed25519
-        ssh-keyscan attest.staging.profian.com >> ~/.ssh/known_hosts
-        ssh-keyscan attest.testing.profian.com >> ~/.ssh/known_hosts
         ssh-keyscan benefice.testing.profian.com >> ~/.ssh/known_hosts
         ssh-keyscan store.staging.profian.com >> ~/.ssh/known_hosts
         ssh-keyscan store.testing.profian.com >> ~/.ssh/known_hosts
@@ -38,8 +36,6 @@ jobs:
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
       run: |
         nix develop '.#base' -c deploy -s --targets \
-          '.#attest-staging' \
-          '.#attest-testing' \
           '.#benefice-testing' \
           '.#store-staging' \
           '.#store-testing'

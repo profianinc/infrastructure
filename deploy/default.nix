@@ -17,13 +17,6 @@
     profiles.system.user = "root";
   };
 in {
-  nodes.attest-production-1 = mkGenericNode self.nixosConfigurations.attest-production-1;
-  nodes.attest-production-2 = mkGenericNode self.nixosConfigurations.attest-production-2;
-  nodes.attest-production-3 = mkGenericNode self.nixosConfigurations.attest-production-3;
-  nodes.attest-production-4 = mkGenericNode self.nixosConfigurations.attest-production-4;
-
-  nodes.attest-staging = mkGenericNode self.nixosConfigurations.attest-staging;
-  nodes.attest-testing = mkGenericNode self.nixosConfigurations.attest-testing;
   nodes.benefice-testing = mkGenericNode self.nixosConfigurations.benefice-testing;
   nodes.nuc-1 = mkTailscaleNode self.nixosConfigurations.nuc-1;
   nodes.sgx-equinix-try = mkGenericNode self.nixosConfigurations.sgx-equinix-try;
