@@ -27,7 +27,6 @@ in {
     self.nixosModules.drawbridge
     self.nixosModules.providers
     self.nixosModules.shells
-    self.nixosModules.steward
     self.nixosModules.users
     self.nixosModules.monitoring
     sops-nix.nixosModules.sops

@@ -13,16 +13,6 @@ jobs:
         - nixosConfigurations.store-testing.config.system.build.toplevel
         - nixosConfigurations.store.config.system.build.toplevel
 
-        # Steward
-        - nixosConfigurations.attest-staging.config.system.build.toplevel
-        - nixosConfigurations.attest-testing.config.system.build.toplevel
-
-        # Steward production
-        - nixosConfigurations.attest-production-1.config.system.build.toplevel
-        - nixosConfigurations.attest-production-2.config.system.build.toplevel
-        - nixosConfigurations.attest-production-3.config.system.build.toplevel
-        - nixosConfigurations.attest-production-4.config.system.build.toplevel
-
         # Benefice
         - nixosConfigurations.benefice-testing.config.system.build.toplevel
         - nixosConfigurations.sgx-equinix-try.config.system.build.toplevel

@@ -19,9 +19,6 @@
   inputs.nixpkgs.url = github:profianinc/nixpkgs;
   inputs.sops-nix.inputs.nixpkgs.follows = "nixpkgs";
   inputs.sops-nix.url = github:Mic92/sops-nix;
-  inputs.steward-production.url = github:profianinc/steward/v0.1.0;
-  inputs.steward-staging.url = github:profianinc/steward/v0.1.0;
-  inputs.steward-testing.url = github:profianinc/steward;
 
   outputs = inputs @ {
     self,
