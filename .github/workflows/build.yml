@@ -8,11 +8,6 @@ jobs:
     strategy:
       matrix:
         output:
-        # Drawbridge
-        - nixosConfigurations.store-staging.config.system.build.toplevel
-        - nixosConfigurations.store-testing.config.system.build.toplevel
-        - nixosConfigurations.store.config.system.build.toplevel
-
         # Benefice
         - nixosConfigurations.benefice-testing.config.system.build.toplevel
         - nixosConfigurations.sgx-equinix-try.config.system.build.toplevel
