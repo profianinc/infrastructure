@@ -29,13 +29,9 @@ jobs:
         ssh-agent -a $SSH_AUTH_SOCK
         ssh-add ~/.ssh/id_ed25519
         ssh-keyscan benefice.testing.profian.com >> ~/.ssh/known_hosts
-        ssh-keyscan store.staging.profian.com >> ~/.ssh/known_hosts
-        ssh-keyscan store.testing.profian.com >> ~/.ssh/known_hosts
     - name: Deploy
       env:
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
       run: |
         nix develop '.#base' -c deploy -s --targets \
-          '.#benefice-testing' \
-          '.#store-staging' \
-          '.#store-testing'
+          '.#benefice-testing'

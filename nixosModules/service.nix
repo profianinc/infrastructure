@@ -24,7 +24,6 @@ in {
   imports = [
     self.nixosModules.benefice
     self.nixosModules.common
-    self.nixosModules.drawbridge
     self.nixosModules.providers
     self.nixosModules.shells
     self.nixosModules.users
