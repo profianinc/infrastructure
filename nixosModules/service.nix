@@ -53,7 +53,9 @@ in {
         users.root.name
       ];
 
-      nixpkgs.overlays = [self.overlays.service];
+      nixpkgs.overlays = [
+        self.overlays.service
+      ];
 
       profian.users.deploy.enable = true;
       profian.users.haraldh.enable = true;
