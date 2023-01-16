@@ -751,11 +751,11 @@
     },
     "nixpkgs_7": {
       "locked": {
-        "lastModified": 1670607758,
-        "narHash": "sha256-L6t2ExjaYQqSAtxto6LdraVeoihFihhq/Rr4tafuTOQ=",
+        "lastModified": 1673911536,
+        "narHash": "sha256-Q0NyN2z0EIfcpRTt9wU79UnEj4bMdDEfbaX6CDkpuKA=",
         "owner": "profianinc",
         "repo": "nixpkgs",
-        "rev": "a78a38d15527fd2c6b8f9d825d4d0e7acaeeb0e7",
+        "rev": "c76886ee002be0b54478468d0e2be62e9f8deace",
         "type": "github"
       },
       "original": {
