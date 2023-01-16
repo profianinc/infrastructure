@@ -281,15 +281,16 @@
         "nixify": "nixify_3"
       },
       "locked": {
-        "lastModified": 1669984585,
-        "narHash": "sha256-ethvhAnNTa8qTxZeHh6/ABqjYf2PgTm1FVPoO0T8LvU=",
+        "lastModified": 1673875334,
+        "narHash": "sha256-qtPONoNAr0o9LIJ5SH3HgSC+fsHrknWGbnEiWaG1Zw4=",
         "owner": "enarx",
         "repo": "enarx",
-        "rev": "88f60f75d38b7c8169c1fc21a3dd1832769e5372",
+        "rev": "e74f4d4c5d996fa3f51cbb03259275a12f6ef84b",
         "type": "github"
       },
       "original": {
         "owner": "enarx",
+        "ref": "v0.7.0",
         "repo": "enarx",
         "type": "github"
       }
